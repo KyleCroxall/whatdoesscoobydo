@@ -6,7 +6,7 @@ body {
 h1 {
     padding: 1.5em auto 0.5em;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
 }
 
@@ -17,4 +17,5 @@ img {
     margin: 0 auto;
     border-radius: 1em;
 }
-    
+
+
