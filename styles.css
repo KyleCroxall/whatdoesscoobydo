@@ -9,20 +9,31 @@ body {
 }
 
 h1 {
-    padding: 0.4em 0.4em 0.2em 0.4em;
     text-align: center;
     font-size: 3em;
     font-weight: 900;
-    margin-top: 0.4em;
     margin-bottom: 0.4em;
 }
 
 img {
     display: block;
-    width: 90%;
-    height: auto;
     margin: 0 auto;
     border-radius: 1em;
+    max-width: 90vw;
+    max-height: 90vh;
+} 
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 
+.container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
 
