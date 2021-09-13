@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Inter', san-serif;
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
 }
 
 h1 {
@@ -31,13 +31,13 @@ img {
 
 section {
     height: 100vh;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .container {
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     height: 100vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .flex-section {
@@ -47,3 +47,18 @@ section {
     gap: 0.4em;
 }
 
+.hero-bg {
+    background: url('./images/Scoob.jpeg');
+    background-position: 50% 80%;
+    background-size: cover;
+}
+
+@media (max-height: 640px) {
+    .hero-bg {
+        background-position: 50% 50%;
+    }
+}
+
+.hero-heading {
+    color: white;
+}
