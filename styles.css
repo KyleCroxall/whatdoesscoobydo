@@ -10,13 +10,15 @@ html {
 
 body {
     font-family: 'Inter', san-serif;
+    text-align: center;
+    background: #0c252f;
+    color: white;
     /* min-height: -webkit-fill-available; */
 }
 
 h1 {
-    text-align: center;
     font-size: 3em;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 img {
@@ -31,13 +33,6 @@ img {
 
 section {
     height: 100vh;
-    /* scroll-snap-align: start; */
-}
-
-.container {
-    /* scroll-snap-type: y mandatory; */
-    height: 100vh;
-    /* overflow-y: scroll; */
 }
 
 .flex-section {
@@ -49,7 +44,7 @@ section {
 
 .hero-bg {
     background: url('./images/Scoob.jpeg');
-    background-position: 50% 80%;
+    background-position: 53% 80%;
     background-size: cover;
 }
 
@@ -59,6 +54,43 @@ section {
     }
 }
 
-.hero-heading {
+/* .hero-heading {
     color: white;
+    position: relative;
+    top: 25%;
+} */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.insta-link {
+    background-color: #f94962CC;
+    color: white;
+    width: max-content;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    z-index: 1;
+}
+
+.insta-link:hover {
+    background-color: #FFFFFFCC;
+    color: #f94962;
+}
+
+.hero-border {
+    border: 2px solid white;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 0;
 }
